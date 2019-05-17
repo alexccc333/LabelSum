@@ -1,0 +1,11 @@
+main {
+    width: 150px;
+    height: 300px;
+    border: 1px;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 0;
+}
+
