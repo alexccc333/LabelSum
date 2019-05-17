@@ -19,11 +19,11 @@
     <form>
         <div class="form-group">
             <label for="valueOne">Первое число:</label>
-            <input type="text" class="form-control" id="valueOne" placeholder="Example input">
+            <input type="text" class="form-control" id="valueOne" value='0.1' placeholder="Example input">
         </div>
         <div class="form-group">
             <label for="valueTwo">Второе число:</label>
-            <input type="text" class="form-control" id="valueTwo" placeholder="Another input">
+            <input type="text" class="form-control" id="valueTwo" value='0.2' placeholder="Another input">
             <button onclick="sum()">Сложить</button>
         </div>
         
@@ -31,10 +31,13 @@
 </main>
 <script>
     function sum() {
+        //получил значение из полей
         let valueOne = $('#valueOne').val();
         let valueTwo = $('#valueTwo').val();
-        let numberOne = parseInt(valueOne);
-        let numberTwo = parseInt(valueTwo);
+        //преобразовал из str в int явно
+        let numberOne = parseFloat(valueOne);
+        let numberTwo = parseFloat(valueTwo);
+        //посчитал значение и вывел ответ
         alert(numberOne + numberTwo);
     }
 </script>
